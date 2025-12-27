@@ -1,0 +1,119 @@
+.note-form {
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  margin-bottom: 40px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.note-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: none;
+  border-bottom: 2px solid #e0e0e0;
+  font-size: 20px;
+  font-weight: 600;
+  background: transparent;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.note-input:focus {
+  outline: none;
+  border-bottom-color: #667eea;
+}
+
+.note-input::placeholder {
+  color: #aaa;
+}
+
+.note-textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: none;
+  font-size: 15px;
+  background: transparent;
+  resize: vertical;
+  min-height: 120px;
+  box-sizing: border-box;
+  line-height: 1.6;
+  font-family: inherit;
+}
+
+.note-textarea:focus {
+  outline: none;
+}
+
+.note-textarea::placeholder {
+  color: #aaa;
+}
+
+.color-picker {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0;
+  padding: 12px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.color-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.color-btn:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.color-btn.selected {
+  border-color: #667eea;
+  transform: scale(1.15);
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.btn {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  letter-spacing: 0.3px;
+}
+
+.btn-submit {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+}
+
+.btn-cancel {
+  background-color: #f0f0f0;
+  color: #555;
+}
+
+.btn-cancel:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-2px);
+}
